@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import MainGrid from './components/MainGrid/'
+const employees = [
+  {
+    img: '',
+    name: "Fili",
+    surname: "Ironfoot",
+    position: "Main Engineer",
+  },
+  {
+    img: '',
+    name: "Tranduil",
+    surname: "Mirkwood",
+    position: "Master of Miners",
+  },
+  {
+    img: '',
+    name: "Odo",
+    surname: "Took",
+    position: "Treasurer",
+  },
+]
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <MainGrid employees={employees}/>
     </>
   )
 }
