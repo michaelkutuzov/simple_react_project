@@ -1,1 +1,3 @@
-export EmployeeCard from './EmployeeCard.jsx'
+import EmployeeCard from "./EmployeeCard.tsx";
+
+export default EmployeeCard;
