@@ -1,2 +1,2 @@
-export * from "./MainGrid.tsx";
-export { default } from "./MainGrid.tsx";
+export * from './MainGrid.tsx';
+export { default } from './MainGrid.tsx';

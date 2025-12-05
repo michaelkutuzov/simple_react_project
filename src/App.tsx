@@ -1,23 +1,23 @@
-import MainGrid from "./components/MainGrid/";
+import MainGrid from './components/MainGrid/';
 
 const employees = [
   {
     img: null,
-    name: "Fili",
-    surname: "Ironfoot",
-    position: "Main Engineer",
+    name: 'Fili',
+    surname: 'Ironfoot',
+    position: 'Main Engineer',
   },
   {
     img: null,
-    name: "Tranduil",
-    surname: "Mirkwood",
-    position: "Master of Miners",
+    name: 'Tranduil',
+    surname: 'Mirkwood',
+    position: 'Master of Miners',
   },
   {
     img: null,
-    name: "Odo",
-    surname: "Took",
-    position: "Treasurer",
+    name: 'Odo',
+    surname: 'Took',
+    position: 'Treasurer',
   },
 ];
 

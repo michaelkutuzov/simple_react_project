@@ -1,5 +1,6 @@
-import { FC } from "react";
-import EmployeeCard from "../EmployeeCard/";
+import type { FC } from 'react';
+import EmployeeCard from '../EmployeeCard/';
+
 export type Employee = {
   img: string;
   name: string;
@@ -15,7 +16,7 @@ const MainGrid: FC<MainGridProps> = ({ employees }) => {
   return (
     <>
       {employees.map((employee) => (
-        <div key={employee.name} className={"gridCell"}>
+        <div key={employee.name + employee.position} className={'gridCell'}>
           <EmployeeCard {...employee} />
         </div>
       ))}
